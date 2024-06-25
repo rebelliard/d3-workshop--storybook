@@ -14,11 +14,12 @@ export function StoryDecorator(Story: StoryFn<ReactRenderer>, ctx: StoryContext<
   const args = _args as unknown as Chart<ReturnType<typeof generateData>>;
   const previousItemCount = usePrevious(args.itemCount);
   const previousMaxValue = usePrevious(args.maxValue);
+  const previousMinValue = usePrevious(args.minValue);
 
   useLayoutEffect(() => {
     if (
       previousItemCount !== undefined &&
-      (previousItemCount !== args.itemCount || previousMaxValue !== args.maxValue)
+      (previousItemCount !== args.itemCount || previousMaxValue !== args.maxValue || previousMinValue !== args.minValue)
     ) {
       if (previousItemCount > args.itemCount) {
         setArgs({
@@ -46,6 +47,27 @@ export function StoryDecorator(Story: StoryFn<ReactRenderer>, ctx: StoryContext<
             value: faker.number.int({
               min: DATA_DEFAULTS.min,
               max: args.maxValue,
+            }),
+            goal: faker.number.int({
+              min: DATA_DEFAULTS.min,
+              max: args.maxValue,
+            }),
+          })),
+        } as any);
+        return;
+      }
+
+      if (previousMinValue !== args.minValue) {
+        setArgs({
+          data: args.data.map((d) => ({
+            ...d,
+            value: faker.number.int({
+              min: args.minValue,
+              max: DATA_DEFAULTS.max,
+            }),
+            goal: faker.number.int({
+              min: args.minValue,
+              max: DATA_DEFAULTS.max,
             }),
           })),
         } as any);
