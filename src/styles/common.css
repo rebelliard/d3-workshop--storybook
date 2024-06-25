@@ -1,0 +1,7 @@
+.chart {
+  width: 100%;
+  height: 100%;
+  border: 1px dashed lightgray;
+  border-radius: 5;
+  font-family: "Nunito Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

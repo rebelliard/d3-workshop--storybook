@@ -1,0 +1,6 @@
+.bar {
+  &:hover {
+    fill-opacity: 0.5;
+    stroke-width: 2;
+  }
+}
