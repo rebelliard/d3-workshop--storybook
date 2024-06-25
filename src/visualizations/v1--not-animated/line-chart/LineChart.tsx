@@ -41,12 +41,7 @@ export function LineChart<Datum>({
 
   return (
     <svg ref={ref} className="chart" width={rootWidth} height={rootHeight}>
-      <g
-        width={boundedWidth}
-        height={boundedHeight}
-        transform={`translate(${marginLeft}, ${marginTop})`}
-        fontSize="14"
-      >
+      <g transform={`translate(${marginLeft}, ${marginTop})`}>
         <VerticalAxis
           data-name="linear-axis"
           tickScale={yScale}

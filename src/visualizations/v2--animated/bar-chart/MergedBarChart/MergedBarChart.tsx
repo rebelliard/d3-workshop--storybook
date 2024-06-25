@@ -49,13 +49,7 @@ export function BarChart<Datum>({
 
   return (
     <svg ref={ref} className="chart" width={rootWidth} height={rootHeight}>
-      <g
-        data-name="bounds"
-        width={boundedWidth}
-        height={boundedHeight}
-        transform={`translate(${marginLeft}, ${marginTop})`}
-        fontSize="14"
-      >
+      <g data-name="bounds" transform={`translate(${marginLeft}, ${marginTop})`}>
         <Axis
           data-name="discrete-axis"
           tickScale={discreteScale}

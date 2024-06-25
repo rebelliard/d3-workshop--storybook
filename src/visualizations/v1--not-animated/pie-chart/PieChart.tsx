@@ -66,13 +66,7 @@ export function PieChart<Datum>({
 
   return (
     <svg ref={ref} className="chart" width={rootWidth} height={rootHeight}>
-      <g
-        data-name="bounds"
-        width={boundedWidth}
-        height={boundedHeight}
-        transform={`translate(${marginLeft}, ${marginTop})`}
-        fontSize="62.5%"
-      >
+      <g data-name="bounds" transform={`translate(${marginLeft}, ${marginTop})`} fontSize="62.5%">
         <g
           data-name="centered-group"
           transform={`translate(${boundedWidth / 2}, ${boundedHeight / 2})`}
