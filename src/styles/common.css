@@ -1,7 +1,8 @@
 .chart {
   border: 1px dashed lightgray;
-  border-radius: 5;
+  border-radius: 5px;
   font-family: "Nunito Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
 
   &:not(.height-auto) {
     height: 100%;

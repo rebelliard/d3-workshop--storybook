@@ -6,7 +6,7 @@ export function BarChartDemo() {
     <main>
       <h2 className="chart-header">Horizontal</h2>
       <svg width="650" height="450" className="chart width-auto height-auto">
-        <g data-name="bounds" fontSize="14">
+        <g data-name="bounds" transform="translate(0,0)">
           <g data-name="bars">
             <rect
               width="160"
@@ -173,7 +173,7 @@ export function BarChartDemo() {
 
       <h2 className="chart-header">Vertical</h2>
       <svg width="650" height="450" className="chart width-auto height-auto">
-        <g data-name="bounds" fontSize="14">
+        <g data-name="bounds" transform="translate(0,0)">
           <g data-name="bars">
             <rect
               width="66.038"

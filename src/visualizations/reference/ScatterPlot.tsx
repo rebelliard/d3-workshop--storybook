@@ -5,7 +5,7 @@ export function ScatterPlotDemo() {
     <main>
       <h2 className="chart-header">Scatter Plot</h2>
       <svg width="650" height="450" className="chart width-auto height-auto">
-        <g fontSize="14">
+        <g data-name="bounds" transform="translate(0,0)">
           <g data-name="linear-axis" textAnchor="end" transform="translate(45 30)">
             <path stroke="currentColor" d="M0 380L0 0"></path>
             <g transform="translate(0 380)">
