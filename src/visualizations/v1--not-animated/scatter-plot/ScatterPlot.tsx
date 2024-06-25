@@ -68,10 +68,11 @@ export function ScatterPlotChart<Datum>({
                 fillOpacity={0.5}
                 opacity={1}
                 strokeWidth={1}
-              />
-              <title>
-                {labelAccessor(d)} ({valueAccessor(d)})
-              </title>
+              >
+                <title>
+                  {labelAccessor(d)} ({valueAccessor(d)})
+                </title>
+              </circle>
             </g>
           );
         })}
