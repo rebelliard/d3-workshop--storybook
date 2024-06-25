@@ -5,7 +5,7 @@ export function PieChartDemo() {
     <main>
       <h2 className="chart-header">Pie Chart</h2>
       <svg width="650" height="450" className="chart width-auto height-auto">
-        <g data-name="bounds">
+        <g data-name="bounds" transform="translate(0,0)">
           <g data-name="centered-group" fontSize="62.5%">
             <g data-name="arcs">
               <g data-name="arc" data-value="16">
@@ -87,7 +87,7 @@ export function PieChartDemo() {
 
       <h2 className="chart-header">Donut Chart</h2>
       <svg width="650" height="450" className="chart width-auto height-auto">
-        <g data-name="bounds">
+        <g data-name="bounds" transform="translate(0,0)">
           <g data-name="centered-group" fontSize="62.5%">
             <g data-name="arcs">
               <g data-name="arc" data-value="16">
