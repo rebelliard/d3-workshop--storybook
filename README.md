@@ -1,4 +1,4 @@
-# React + TypeScript + Storybook
+# D3 + React + Storybook
 
 ```sh
 yarn storybook
