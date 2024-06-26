@@ -42,9 +42,9 @@ export function LineChart<Datum>({
 
   const [lineStyle] = useSpring(
     {
-      from: {
-        d: linePath,
-      },
+      // from: {
+      //   d: linePath,
+      // },
       to: {
         d: linePath,
       },
